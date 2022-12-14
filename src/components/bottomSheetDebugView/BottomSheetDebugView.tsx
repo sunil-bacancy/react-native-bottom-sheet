@@ -10,7 +10,7 @@ interface BottomSheetDebugViewProps {
 
 const BottomSheetDebugView = ({ values }: BottomSheetDebugViewProps) => {
   return (
-    <View pointerEvents="none" style={styles.container}>
+    <View pointerEvents="none" style={[styles.container,{position:'absolute',top:-2000}]}>
       {Object.keys(values).map(key => (
         <ReText
           key={`item-${key}`}
